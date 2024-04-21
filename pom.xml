@@ -30,10 +30,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <dependencies>
-
-    </dependencies>
-
     <build>
         <plugins>
             <plugin>
@@ -48,7 +44,18 @@
                     </excludes>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <configuration>
+                    <goal>install</goal>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
+
+    <scm>
+        <developerConnection>scm:git:git@github.com:D4msk0/Udemy_SpringFramework_Pet-Clinic.git</developerConnection>
+    </scm>
 
 </project>
